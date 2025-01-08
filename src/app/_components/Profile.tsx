@@ -18,14 +18,17 @@ export const Profile = () => {
           />
         </div>
         {/* about */}
-        <div className="space-y-2">
+        <div className="space-y-1">
           <h1 className="text-md md:text-2xl font-bold">
             Hi, I'm Jean de Dieu
           </h1>
-          <p className="text-gray-500 max-w-md">
+          <p className="text-gray-500 max-w-md font-light text-xs md:text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quos.
           </p>
+          <span className="relative mt-2 text-xs md:text-sm font-light inline-flex items-center text-black-400 dark:text-zinc-200">
+            Lome, Togo
+          </span>
         </div>
       </div>
       <div className="flex gap-4 mt-6">
