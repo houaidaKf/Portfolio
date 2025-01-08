@@ -2,6 +2,8 @@
 
 This is my portfolio website.
 
+![alt text](public/portfolio.png)
+
 ## Features
 
 - Responsive design
