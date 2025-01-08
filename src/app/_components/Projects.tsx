@@ -11,15 +11,17 @@ import { Section, SectionTitle } from "./Section";
 export const Projects = () => {
   const ProjectList = PROJECTS.map((project) => (
     <CarouselItem
-      className="h-[100px] md:h-[250px] md:basis-1/3 basis-1/2 pl-2"
+      className="min-w-0 shrink-0 grow-0 md:basis-1/3 basis-11/12 pl-1 md:pl-2"
       key={project.title}
     >
-      <ProjectCard
-        title={project.title}
-        description={project.description}
-        image={project.image}
-        link={project.link}
-      />
+      <div className="">
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          image={project.image}
+          link={project.link}
+        />
+      </div>
     </CarouselItem>
   ));
 
@@ -27,7 +29,9 @@ export const Projects = () => {
     <Section>
       <SectionTitle>Recent projects</SectionTitle>
       <Carousel className="w-full">
-        <CarouselContent>{ProjectList}</CarouselContent>
+        <CarouselContent className="-ml-1 md:-ml-2">
+          {ProjectList}
+        </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>

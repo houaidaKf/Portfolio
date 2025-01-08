@@ -1,11 +1,4 @@
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 
 export type ProjectCardProps = {
@@ -17,18 +10,26 @@ export type ProjectCardProps = {
 
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <Card className="w-full h-full">
-      <CardHeader>
-        <img src={props.image} alt={props.title} />
-      </CardHeader>
-      <CardContent>
-        <CardDescription>{props.description}</CardDescription>
-      </CardContent>
-      <CardFooter>
-        <Button>
-          <Link href={props.link}>View</Link>
-        </Button>
-      </CardFooter>
-    </Card>
+    <Link href={props.link} target="_blank">
+      <Card className="w-full md:h-[200px] h-[330px] overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02]">
+        <CardContent className="p-0 h-full flex flex-col">
+          <div className="w-full md:h-[60%] h-[80%] overflow-hidden">
+            <img
+              className="w-full h-full"
+              src={props.image}
+              alt={props.title}
+            />
+          </div>
+          <div className="p-4 flex-1">
+            <h3 className="text-md font-semibold mb-1 truncate">
+              {props.title}
+            </h3>
+            <p className="text-xs text-muted-foreground line-clamp-2">
+              {props.description}
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
   );
 };
