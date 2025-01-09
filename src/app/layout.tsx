@@ -28,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/me.jpeg" />
+      </head>
       <body className={cn(robotoMono.variable, caveat.variable, "font-sans")}>
         <Suspense fallback={<Loading />}>
           <Header />
