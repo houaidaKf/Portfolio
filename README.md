@@ -2,7 +2,7 @@
 
 This is my portfolio website.
 
-![alt text](public/portfolio.png)
+![alt text](./public/Portfolio.png)
 
 ## Features
 
@@ -12,7 +12,7 @@ This is my portfolio website.
 - Contact section
 - About section
 - Blog section
-- Last played song (Spotify API)
+- Last played song (Spotify API) (coming soon..)
 
 ## Requirements
 

@@ -1,17 +1,12 @@
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 import { Section } from "./Section";
 import { Socials } from "./Socials";
-
 export const Profile = () => {
   return (
-    <Section className="py-8">
-      <div className="flex items-start gap-6  ">
-        <div className="flex items-center justify-center">
-          <img
-            src="https://avatars.githubusercontent.com/u/141136058?v=4"
-            alt="Profile"
-            className=" rounded-full max-w-24 max-h-24"
-          />
-        </div>
+    <Section className="py-8 relative">
+      <div className="flex items-start justify-between  ">
         {/* about */}
         <div className="space-y-1">
           <h1 className="text-md md:text-2xl font-bold">
@@ -25,8 +20,26 @@ export const Profile = () => {
             Lome, Togo
           </span>
         </div>
+        <div className="flex items-center justify-center">
+          <img
+            src="https://avatars.githubusercontent.com/u/141136058?v=4"
+            alt="Profile"
+            className=" rounded-full max-w-24 max-h-24"
+          />
+        </div>
       </div>
-      <Socials className="mt-4" />
+      <div className="flex items-center mt-4 gap-4">
+        <Link
+          className={cn(
+            buttonVariants({ variant: "outline" }),
+            "bg-primary text-white w-auto h-8 px-4"
+          )}
+          href="https://drive.google.com/file/d/1f_BlZEG-yheUAmi4xLB_oncQrtxhlPhx/view"
+        >
+          Resume
+        </Link>
+        <Socials />
+      </div>
     </Section>
   );
 };

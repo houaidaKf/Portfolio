@@ -32,7 +32,7 @@ export const About = () => {
   );
   return (
     <Section>
-      <SectionTitle>About Me</SectionTitle>
+      <SectionTitle id="about">About Me</SectionTitle>
       <div className="text-sm mb-4">
         <p>
           I&apos;m a passionate developer with a strong interest in various

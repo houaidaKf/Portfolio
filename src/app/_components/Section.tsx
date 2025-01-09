@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 export type SectionProps = {
   children: React.ReactNode;
   className?: string;
+  id?: string;
 };
 
 export const Section = (props: SectionProps) => {
@@ -15,7 +16,7 @@ export const Section = (props: SectionProps) => {
 
 export const SectionTitle = (props: SectionProps) => {
   return (
-    <div className="mb-4">
+    <div className="mb-4" id={props.id}>
       <h2 className="text-xs font-semibold uppercase tracking-wider text-primary">
         {props.children}
       </h2>

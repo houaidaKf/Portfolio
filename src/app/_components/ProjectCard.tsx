@@ -11,7 +11,7 @@ export type ProjectCardProps = {
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <Link href={props.link} target="_blank">
-      <Card className="w-full md:h-[200px] h-[330px] overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02]">
+      <Card className="w-full md:h-[250px] h-[330px] overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02]">
         <CardContent className="p-0 h-full flex flex-col">
           <div className="w-full md:h-[60%] h-[80%] overflow-hidden">
             <img

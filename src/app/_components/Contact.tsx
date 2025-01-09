@@ -6,7 +6,7 @@ import { Section, SectionTitle } from "./Section";
 export const Contact = () => {
   return (
     <Section>
-      <SectionTitle>Let&apos;s connect</SectionTitle>
+      <SectionTitle id="contact">Let&apos;s connect</SectionTitle>
       <div className="space-y-4 flex flex-col items-center">
         <div>
           <p>

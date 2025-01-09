@@ -6,33 +6,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     font-family: "Roboto Mono", monospace;
-    --background: 251 48% 13%;
-    --foreground: 251 38% 83%;
-    --muted: 251 12% 17%;
-    --muted-foreground: 251 12% 67%;
-    --popover: 251 48% 10%;
-    --popover-foreground: 251 38% 93%;
-    --card: 251 48% 11%;
-    --card-foreground: 251 38% 88%;
-    --border: 251 38% 18%;
-    --input: 251 38% 21%;
-    --primary: 258 100% 75%;
-    --primary-foreground: 258 100% 15%;
-    --secondary: 258 30% 25%;
-    --secondary-foreground: 258 30% 85%;
-    --accent: 251 48% 28%;
-    --accent-foreground: 251 48% 88%;
-    --destructive: 7 87% 60%;
-    --destructive-foreground: 0 0% 0%;
-    --ring: 258 100% 75%;
-    --chart-1: 258 100% 75%;
-    --chart-2: 258 30% 25%;
-    --chart-3: 251 48% 28%;
-    --chart-4: 258 30% 28%;
-    --chart-5: 258 103% 75%;
+    --background: 263 26% 13%;
+    --foreground: 261 17% 84%;
+    --muted: 263 12% 17%;
+    --muted-foreground: 263 12% 67%;
+    --popover: 263 26% 10%;
+    --popover-foreground: 261 17% 94%;
+    --card: 263 26% 11%;
+    --card-foreground: 261 17% 89%;
+    --border: 263 16% 18%;
+    --input: 263 16% 21%;
+    --primary: 275 84% 61%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 275 30% 75%;
+    --secondary-foreground: 275 30% 15%;
+    --accent: 263 26% 28%;
+    --accent-foreground: 263 26% 88%;
+    --destructive: 10 84% 56%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 275 84% 61%;
+    --chart-1: 275 84% 61%;
+    --chart-2: 275 30% 75%;
+    --chart-3: 263 26% 28%;
+    --chart-4: 275 30% 78%;
+    --chart-5: 275 87% 61%;
     --radius: 0.5rem;
   }
 }

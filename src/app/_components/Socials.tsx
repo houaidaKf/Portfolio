@@ -8,22 +8,22 @@ export const Socials = ({ className }: { className?: string }) => {
   return (
     <div className={cn("flex gap-2", className)}>
       <Link
-        className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+        className={cn(buttonVariants({ variant: "outline" }), "size-8 p-0")}
         href="https://github.com/johnOfGod33"
       >
-        <Github size={12} />
+        <Github size={14} />
       </Link>
       <Link
-        className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+        className={cn(buttonVariants({ variant: "outline" }), "size-8 p-0")}
         href="https://linkedin.com/in/jean-de-dieu-sessou-260897292"
       >
-        <Linkedin size={12} />
+        <Linkedin size={14} />
       </Link>
       <Link
-        className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+        className={cn(buttonVariants({ variant: "outline" }), "size-8 p-0")}
         href="https://twitter.com/JohnKamiCode"
       >
-        <Twitter size={12} />
+        <Twitter size={14} />
       </Link>
     </div>
   );
