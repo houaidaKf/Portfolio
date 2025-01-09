@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Caveat, Roboto_Mono } from "next/font/google";
+import Footer from "./_components/Footer";
+import { Header } from "./_components/Header";
 import "./globals.css";
 
 const robotoMono = Roboto_Mono({
@@ -13,8 +15,8 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Jean de Dieu . Backend Developer",
-  description: "jean de dieu is a backend developer",
+  title: "Jean de Dieu - Backend Developer",
+  description: "Solopreneur, Backend Developer",
 };
 
 export default function RootLayout({
@@ -25,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(robotoMono.variable, caveat.variable, "font-sans")}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

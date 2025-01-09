@@ -7,22 +7,27 @@ export const About = () => {
 
   const moreText = (
     <div
-      className={`text-sm overflow-hidden transition-all duration-700 ease-in mb-4
+      className={`space-y-4 text-sm overflow-hidden transition-all duration-700 ease-in mb-2
       ${isExpanded ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
     >
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-        officiis nobis in consectetur autem veniam esse harum error sit expedita
-        commodi, animi deleniti, ipsum quidem minus explicabo corrupti fugiat
-        nihil. Quod consequatur iste pariatur tempore fugit facere voluptatem
-        non mollitia expedita omnis quae, consequuntur numquam, quam voluptas
-        soluta culpa sed animi quibusdam commodi a ipsa hic aliquam atque rerum?
-        Ut, sapiente veritatis. Quod, adipisci accusantium dolorum animi
-        architecto neque quisquam cupiditate quaerat molestiae praesentium sint
-        repellat itaque quia vel pariatur dicta ullam molestias possimus odit
-        amet hic voluptate? Id molestiae incidunt eos voluptatem dolore officia
-        vel suscipit exercitationem velit dolor.
-      </p>
+      <div>
+        <p>
+          I hold a Bachelor&apos;s degree in Mechanical Engineering from the
+          École Polytechnique de Lomé (EPL). Over the past year, I have
+          transitioned into the field of computer science, driven by my passion
+          for technology and problem-solving. I am currently pursuing a two-year
+          Master&apos;s degree in Artificial Intelligence and Big Data at the
+          Collège de Paris Supérieur, where I am further deepening my expertise
+          in cutting-edge technologies.
+        </p>
+      </div>
+      <div>
+        <p>
+          When I&apos;m not coding, I spend my time listening to music, reading
+          books, working out at the gym, and playing games or enjoying
+          manga/anime.
+        </p>
+      </div>
     </div>
   );
   return (
@@ -30,13 +35,17 @@ export const About = () => {
       <SectionTitle>About Me</SectionTitle>
       <div className="text-sm mb-4">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a
-          assumenda expedita eaque voluptatibus, in exercitationem, deleniti
-          ducimus nihil atque obcaecati, vel fuga quia voluptas?
+          I&apos;m a passionate developer with a strong interest in various
+          technology fields, including web development (with a primary focus on
+          backend systems), cloud computing, data, game development, and AI.
+          I&apos;m also deeply intrigued by business entrepreneurship and the
+          intersection of technology and innovation. With over 1 year of
+          experience, I&apos;ve honed my skills through personal projects and
+          enjoy continuously learning and exploring new technologies to expand
+          my expertise.
         </p>
       </div>
       {moreText}
-
       <button
         className="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-300 transition-colors mb-4"
         onClick={() => setIsExpanded(!isExpanded)}

@@ -11,7 +11,7 @@ import { Section, SectionTitle } from "./Section";
 export const Projects = () => {
   const ProjectList = PROJECTS.map((project) => (
     <CarouselItem
-      className="min-w-0 shrink-0 grow-0 md:basis-1/3 basis-11/12 pl-1 md:pl-2"
+      className="min-w-0 shrink-0 grow-0 md:basis-1/3 basis-11/12 py-1 pl-1 md:pl-2"
       key={project.title}
     >
       <div className="">

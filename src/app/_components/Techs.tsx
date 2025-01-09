@@ -3,8 +3,8 @@ import { Section, SectionTitle } from "./Section";
 
 export const Techs = () => {
   return (
-    <Section className="py-8">
-      <SectionTitle>I like to work with</SectionTitle>
+    <Section>
+      <SectionTitle>TECHNOLOGIES</SectionTitle>
       <div className="grid grid-cols-4 gap-1 sm:grid-cols-6 md:grid-cols-7">
         <Card>
           <div className="group flex aspect-square select-none flex-col items-center justify-center p-2">

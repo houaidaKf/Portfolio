@@ -7,7 +7,7 @@ export type SectionProps = {
 
 export const Section = (props: SectionProps) => {
   return (
-    <section className={cn("max-w-2xl mx-auto px-4 mb-8", props.className)}>
+    <section className={cn("max-w-2xl mx-auto p-4", props.className)}>
       {props.children}
     </section>
   );
@@ -15,8 +15,8 @@ export const Section = (props: SectionProps) => {
 
 export const SectionTitle = (props: SectionProps) => {
   return (
-    <div className="mb-8">
-      <h2 className="mb-3 text-xs font-light uppercase tracking-wider">
+    <div className="mb-4">
+      <h2 className="text-xs font-semibold uppercase tracking-wider text-primary">
         {props.children}
       </h2>
     </div>

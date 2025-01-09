@@ -9,25 +9,30 @@ body {
 @layer base {
   :root {
     font-family: "Roboto Mono", monospace;
-    --background: 220.91 39.29% 10.98%;
-    --foreground: 0 0% 100%;
-    --muted: 215 27.91% 16.86%;
-    --muted-foreground: 217.89 10.61% 64.9%;
-    --popover: 220.91 39.29% 10.98%;
-    --popover-foreground: 0 0% 100%;
-    --card: 220.91 39.29% 10.98%;
-    --card-foreground: 0 0% 100%;
-    --border: 216.92 19.12% 26.67%;
-    --input: 216.92 19.12% 26.67%;
-    --primary: 152.95 100% 37.84%;
-    --primary-foreground: 220.91 39.29% 10.98%;
-    --secondary: 215 27.91% 16.86%;
-    --secondary-foreground: 220 13.04% 90.98%;
-    --accent: 215 27.91% 16.86%;
-    --accent-foreground: 220 13.04% 90.98%;
-    --destructive: 0 90.6% 70.78%;
-    --destructive-foreground: 220.91 39.29% 10.98%;
-    --ring: 152.95 100% 37.84%;
+    --background: 251 48% 13%;
+    --foreground: 251 38% 83%;
+    --muted: 251 12% 17%;
+    --muted-foreground: 251 12% 67%;
+    --popover: 251 48% 10%;
+    --popover-foreground: 251 38% 93%;
+    --card: 251 48% 11%;
+    --card-foreground: 251 38% 88%;
+    --border: 251 38% 18%;
+    --input: 251 38% 21%;
+    --primary: 258 100% 75%;
+    --primary-foreground: 258 100% 15%;
+    --secondary: 258 30% 25%;
+    --secondary-foreground: 258 30% 85%;
+    --accent: 251 48% 28%;
+    --accent-foreground: 251 48% 88%;
+    --destructive: 7 87% 60%;
+    --destructive-foreground: 0 0% 0%;
+    --ring: 258 100% 75%;
+    --chart-1: 258 100% 75%;
+    --chart-2: 258 30% 25%;
+    --chart-3: 251 48% 28%;
+    --chart-4: 258 30% 28%;
+    --chart-5: 258 103% 75%;
     --radius: 0.5rem;
   }
 }
