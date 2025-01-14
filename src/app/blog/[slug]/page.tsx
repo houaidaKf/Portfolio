@@ -38,22 +38,32 @@ export default async function page({
   }
 
   return (
-    <Section className="prose prose-invert prose-sm lg:prose-base">
-      <div className="flex items-center gap-2">
-        <p className="text-primary">
-          {new Date(article.publishedAt).toLocaleDateString("fr-FR", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-          })}{" "}
-          •
-        </p>
-        <ViewCount slug={slug} />
+    <Section className="relative">
+      <div className="flex flex-col lg:flex-row justify-between max-w-7xl mx-auto">
+        <article className="prose prose-invert prose-sm lg:prose-base max-w-3xl">
+          <div className="border-b border-muted">
+            <div className="flex items-center gap-2 py-2">
+              <div className="flex flex-col sm:flex-row gap-2 max-w-prose">
+                <div className="text-primary">
+                  {new Date(article.publishedAt).toLocaleDateString("fr-FR", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
+                  })}
+                  {" • "}
+                </div>
+                <ViewCount slug={slug} />
+              </div>
+            </div>
+            <div className="py-2 m-0">
+              <h1>{article.title}</h1>
+            </div>
+          </div>
+          <div className="py-4">
+            <Mdx content={article.content} />
+          </div>
+        </article>
       </div>
-      <div>
-        <h1>{article.title}</h1>
-      </div>
-      <Mdx content={article.content} />
     </Section>
   );
 }
