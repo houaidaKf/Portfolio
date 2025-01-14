@@ -7,10 +7,13 @@ import { ViewCount } from "./ViewCount";
 
 export const dynamic = "force-static";
 
-export const generateMetadata = async (props: {
-  params: { slug: string };
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> => {
-  const article = await getArticle(props.params.slug);
+  const slug = (await params).slug;
+  const article = await getArticle(slug);
 
   if (!article) {
     return {
@@ -24,7 +27,6 @@ export const generateMetadata = async (props: {
     description: article.description,
   };
 };
-
 export default async function page({
   params,
 }: {
