@@ -12,7 +12,7 @@ export const ViewCount = ({ slug }: { slug: string }) => {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-sm text-gray-500">
+      <span className="text-sm text-primary">
         {data.views} {data.views === 1 ? "view" : "views"}
       </span>
     </div>
