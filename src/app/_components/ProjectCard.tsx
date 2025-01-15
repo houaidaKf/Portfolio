@@ -21,7 +21,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             />
           </div>
           <div className="p-4 flex-1">
-            <h3 className="text-md font-semibold mb-1 truncate">
+            <h3 className="text-md font-semibold mb-1 truncate font-heading">
               {props.title}
             </h3>
             <p className="text-xs text-muted-foreground line-clamp-2">

@@ -10,7 +10,8 @@ export default {
   theme: {
     fontFamily: {
       caption: ["var(--font-caveat)"],
-      sans: ["var(--font-roboto)"],
+      sans: ["var(--font-open-sans)"],
+      heading: ["var(--font-ubuntu)"],
     },
     extend: {
       colors: {

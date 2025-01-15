@@ -8,7 +8,7 @@ export const Header = () => {
           <Link href="/">Jean de Dieu</Link>
         </div>
         <div>
-          <nav className="flex justify-between text-xs md:text-sm">
+          <nav className="flex justify-between text-xs md:text-sm font-heading">
             <ul className="flex items-center">
               <li className="px-2 hover:text-primary transition-colors duration-300 ease-in-out">
                 <Link href="/#projects">Projects</Link>

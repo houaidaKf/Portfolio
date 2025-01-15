@@ -7,7 +7,7 @@ export default async function page() {
   return (
     <Section>
       <div className="mb-10">
-        <h1 className="text-2xl font-bold">Articles</h1>
+        <h1 className="text-2xl font-bold font-heading">Articles</h1>
       </div>
       <div className="min-h-[65vh]">
         <ul className="space-y-8">

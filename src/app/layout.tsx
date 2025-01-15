@@ -1,19 +1,26 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Caveat, Roboto_Mono } from "next/font/google";
+import { Caveat, Open_Sans, Ubuntu } from "next/font/google";
 import { Suspense } from "react";
 import Footer from "./_components/Footer";
 import { Header } from "./_components/Header";
 import Loading from "./_components/Loading";
 import "./globals.css";
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
+const ubuntu = Ubuntu({
+  variable: "--font-ubuntu",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 const caveat = Caveat({
   variable: "--font-caveat",
   subsets: ["latin"],
+});
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +38,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/me.jpeg" />
       </head>
-      <body className={cn(robotoMono.variable, caveat.variable, "font-sans")}>
+      <body
+        className={cn(
+          ubuntu.variable,
+          caveat.variable,
+          openSans.variable,
+          "font-sans font-medium"
+        )}
+      >
         <Suspense fallback={<Loading />}>
           <Header />
           {children}

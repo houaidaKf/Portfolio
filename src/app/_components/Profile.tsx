@@ -9,7 +9,7 @@ export const Profile = () => {
       <div className="flex items-start justify-between  ">
         {/* about */}
         <div className="space-y-1">
-          <h1 className="text-md md:text-2xl font-bold">
+          <h1 className="text-md md:text-2xl font-bold font-heading">
             Hi, I&apos;m Jean de Dieu
           </h1>
           <p className="text-muted-foreground max-w-md font-light text-xs md:text-sm">
