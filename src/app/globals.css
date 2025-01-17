@@ -12,7 +12,6 @@ html {
 
 @layer base {
   :root {
-    font-family: "Roboto Mono", monospace;
     --background: 220.91 39.29% 10.98%;
     --foreground: 0 0% 100%;
     --muted: 215 27.91% 16.86%;
