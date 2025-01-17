@@ -1,4 +1,5 @@
 import { buttonVariants } from "@/components/ui/button";
+import TypingAnimation from "@/components/ui/typing-animation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Section } from "./Section";
@@ -10,7 +11,10 @@ export const Profile = () => {
         {/* about */}
         <div className="space-y-1">
           <h1 className="text-md md:text-2xl font-bold font-heading">
-            Hi, I&apos;m Jean de Dieu
+            Hi,{" "}
+            <TypingAnimation startOnView={true} className="inline-block m-0">
+              I&apos;m Jean de Dieu
+            </TypingAnimation>
           </h1>
           <p className="text-muted-foreground max-w-md font-light text-xs md:text-sm">
             a self-taught fullstack developer, specializing in building scalable
