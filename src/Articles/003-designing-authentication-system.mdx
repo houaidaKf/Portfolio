@@ -1,44 +1,9 @@
 ---
 title: Implement authentication quickly with Auth0 and Node.js
 description: Discover the simplest way to set up authentication in your Node.js app using Auth0. Save time, enhance security, and focus on building features instead of reinventing the wheel. Perfect for fast, productive, and secure development!
-publishedAt: "2025-01-23"
+publishedAt: "2025-01-27"
 published: false
 ---
-
-## heros ?
-
-developers
-
-## quete ?
-
-Implementé rapidement l'authentication et l'authorization
-
-## objet
-
-pour gagner du temps, etre plus productif
-
-## les opposants
-
-- paresse
-- manque de securité
-- (tous les desavantage de faire soi meme son auth)
-
-## outils
-
-- node js
-- Auth0
-
-## why
-
-Personally it for enhance my skill and know how i can accelerate my development fo not waste time (build in public)
-
-## What
-
-I'll talk about authentication and authorization and how implement Auth0 a service of auth in a app to speed up the development
-
-# Structure
-
-## DEBUT
 
 I have a ton of app ideas, but there’s one recurring obstacle every time I start: user management, authentication, and all that comes with it. And let's be real, every time I face it, I’m just like: "Ugh, not again..." 😅
 
@@ -46,13 +11,33 @@ Yep, I admit it, I’m lazy. But you know what? Laziness can actually be a devel
 
 I’ve got you covered with a solution that simplifies it all: Auth0. It’s a platform that handles authentication for you, saving you precious time while ensuring top-notch security. I’ll walk you through how to implement it in a Node.js app and show you how it can seriously speed up your development.
 
-## why authentication and authorization matter
+## Authentication, Authorization, what is it ?
 
-## How authentication works
+Before diving into implementation, let’s clarify the two key terms:
 
-## How authorization works
+- **Authentication**: It’s all about confirming the identity of the user. For example, checking if the user has entered the correct email and password. This ensures that the user is who they claim to be.
 
-##
+- **Authorization**: Once the user is authenticated, authorization determines what resources he can access and what action he can do.
+
+In short, access to a resource is protected by both authentication and authorization. If you can't prove your identity, you won't be allowed into a resource. And even if you can prove your identity, if you are not authorized for that resource, you will still be denied access.
+
+## What Are the Requirements for a Secure Authentication System?
+
+I won’t dive too deeply into the details here (because we’re focusing on the tutorial), but here’s a quick overview of what’s required for a secure authentication system:
+
+1. Input Validation:
+   Ensure that all user inputs—like email and passwords—are properly validated to avoid vulnerabilities such as SQL injection or weak passwords.
+
+2. Password Hashing:
+   Store passwords securely by hashing them with algorithms like bcrypt. This ensures that even if the database is breached, the passwords are unreadable.
+
+3. Session Management:
+   Manage user sessions using access tokens, refresh tokens, or cookies. These tokens should be securely stored and periodically refreshed to avoid constant logins.
+
+4. Optional Verification:
+   Add an extra layer of security by verifying users during registration or login, either through email confirmation or OTP.
+
+I hope you’ll agree with me that this process can get long and daunting. Implementing all these requirements from scratch is not only time-consuming but also error-prone. That’s why I turned to Auth0, a service that handles all these complexities for you while letting you focus on building your app.
 
 ## Tuto sur Auth0
 
