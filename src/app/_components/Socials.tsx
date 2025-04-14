@@ -21,7 +21,7 @@ export const Socials = ({ className }: { className?: string }) => {
       </Link>
       <Link
         className={cn(buttonVariants({ variant: "outline" }), "size-8 p-0")}
-        href="https://twitter.com/JohnKamiCode"
+        href="https://twitter.com/jeandedieudev"
       >
         <Twitter size={14} />
       </Link>
