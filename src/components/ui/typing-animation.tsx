@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 interface TypingAnimationProps extends MotionProps {
   children: string;
   className?: string;
-  duration?: number;
+  duration?: number; 
   delay?: number;
   as?: React.ElementType;
   startOnView?: boolean;

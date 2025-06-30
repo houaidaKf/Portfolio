@@ -3,28 +3,22 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Github } from "./icons/Github";
 import Linkedin from "./icons/Linkedin";
-import Twitter from "./icons/Twitter";
 export const Socials = ({ className }: { className?: string }) => {
   return (
     <div className={cn("flex gap-2", className)}>
       <Link
         className={cn(buttonVariants({ variant: "outline" }), "size-8 p-0")}
-        href="https://github.com/johnOfGod33"
+        href="https://github.com/houaidaKf"
       >
         <Github size={14} />
       </Link>
       <Link
         className={cn(buttonVariants({ variant: "outline" }), "size-8 p-0")}
-        href="https://linkedin.com/in/jean-de-dieu-sessou-260897292"
+        href="https://www.linkedin.com/in/houaida-krifa/"
       >
         <Linkedin size={14} />
       </Link>
-      <Link
-        className={cn(buttonVariants({ variant: "outline" }), "size-8 p-0")}
-        href="https://twitter.com/jeandedieudev"
-      >
-        <Twitter size={14} />
-      </Link>
+
     </div>
   );
 };

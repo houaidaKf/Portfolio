@@ -12,22 +12,13 @@ export const About = () => {
     >
       <div>
         <p>
-          I hold a Bachelor&apos;s degree in Mechanical Engineering from the
-          École Polytechnique de Lomé (EPL). Over the past year, I have
-          transitioned into the field of computer science, driven by my passion
-          for technology and problem-solving. I am currently pursuing a two-year
-          Master&apos;s degree in Artificial Intelligence and Big Data at the
-          Collège de Paris Supérieur, where I am further deepening my expertise
-          in cutting-edge technologies.
+          I hold an Engineering degree in Computer Science from the Polytechnic School of Sousse. 
+          Over the past three years, I have been actively working in the field while pursuing my studies, driven by a strong passion for 
+          technology and problem-solving. This hands-on experience, combined with my academic background, has allowed me to build 
+          solid expertise in modern computer science and emerging technologies.
         </p>
       </div>
-      <div>
-        <p>
-          When I&apos;m not coding, I spend my time listening to music, reading
-          books, working out at the gym, and playing games or enjoying
-          manga/anime.
-        </p>
-      </div>
+     
     </div>
   );
   return (
@@ -37,10 +28,9 @@ export const About = () => {
         <p>
           I&apos;m a passionate developer with a strong interest in various
           technology fields, including web development (with a primary focus on
-          backend systems), cloud computing, data, game development, and AI.
-          I&apos;m also deeply intrigued by business entrepreneurship and the
-          intersection of technology and innovation. With over 1 year of
-          experience, I&apos;ve honed my skills through personal projects and
+          backend systems) ,data and AI.
+          I&apos;m also deeply intrigued by the intersection of technology and innovation. 
+          With over 3 years of experience, I&apos;ve honed my skills through personal projects and
           enjoy continuously learning and exploring new technologies to expand
           my expertise.
         </p>

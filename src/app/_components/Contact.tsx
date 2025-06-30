@@ -14,7 +14,7 @@ export const Contact = () => {
           </p>
         </div>
         <Link
-          href="mailto:sessoujeandedieu@gmail.com"
+          href="mailto:krifahouaida62@gmail.com"
           className={cn(
             buttonVariants({ variant: "outline" }),
             "bg-primary text-white"

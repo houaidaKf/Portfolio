@@ -24,7 +24,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Jean de Dieu • Backend Developer",
+  title: "Houaida Krifa • Backend Developer",
   description: "Solopreneur, Backend Developer",
 };
 

@@ -41,35 +41,44 @@ export const Projects = () => {
 
 const PROJECTS = [
   {
-    title: "Password Generator",
+    title: "ECOSHARE",
     description:
-      "this website will generate a ramdom password. Depending on the chosen criteria we'll have a weak, medium, strong and very strong ",
+      "A web and mobile application for school families to share daily commutes",
     image:
-      "https://github.com/johnOfGod33/password-generator/raw/main/assets/passwordGenerator.PNG",
-    link: "https://johnofgod33.github.io/password-generator/",
+      "/ecoshare.png",
+    link: "https://myecoshare.com/",
+  }, 
+  {
+    title: "ITCHECK",
+    description:
+      "A Mobile application linking users to experts in various fields.",
+    image:
+      "/itcheck.png",
+    link: "https://play.google.com/store/apps/details?id=com.itchek&hl=ln",
   },
   {
-    title: "Personal Blog API",
+    title: "AHKILI",
     description:
-      "A RESTful API that would power a personal blog.The client interface can be found",
+      "A web and mobile app providing psychological support with certified therapists.",
     image:
-      "https://github.com/johnOfGod33/Personal-Blog-API/raw/main/assets/Personal%20blog%20api.png",
-    link: "https://personal-blog-api-7cge.onrender.com/api-docs/",
+      "/ahkili.png",
+    link: "https://www.ahkili.com.tn/",
   },
   {
-    title: "Admin Blog Panel",
+    title: "UNETP",
     description:
-      "A web application that allows users to create and manage blog posts ",
+      "A web app for managing private educational institutions.",
     image:
-      "https://github.com/johnOfGod33/admin-blog-panel/raw/main/src/assets/img/articles_homepage.png",
-    link: "https://github.com/johnOfGod33/admin-blog-panel",
+      "/unetp.png",
+    link: "https://unetp.eu/",
   },
-  {
-    title: "Caching Proxy CLI",
+   {
+    title: "KIDS PROTECT",
     description:
-      "A command-line interface that runs a server to intercept requests and save responses in cache ",
+      "A web and mobile app helping parents monitor children’s visual and mental health.",
     image:
-      "https://github.com/johnOfGod33/Caching-Proxy-CLI/raw/main/asset/cli%20example.png",
-    link: "https://github.com/johnOfGod33/Caching-Proxy-CLI",
+      "/kids_protect.png",
+    link: "https://www.kidsprotectapp.com/",
   },
+  
 ];
